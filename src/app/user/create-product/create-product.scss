@@ -1,0 +1,47 @@
+.create-product {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+
+  &__right {
+    padding: 50px;
+    margin: 0 auto;
+    width: 50%;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex: 1;
+
+    input {
+      flex: 1;
+      padding: 12px;
+      border-radius: 5px;
+      border: 1px solid #3b81f6;
+    }
+
+    select {
+      flex: 1;
+      padding: 12px;
+      border-radius: 5px;
+      border: 1px solid #3b81f6;
+    }
+
+    button {
+      padding: 12px;
+      background-color: #3b81f6;
+      color: #fff;
+      border-radius: 5px;
+      transition: 0.2s;
+
+      &:hover {
+        opacity: 0.8;
+      }
+
+      &:active {
+        transform: scale(0.95);
+      }
+    }
+  }
+}
